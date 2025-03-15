@@ -57,7 +57,7 @@ document.getElementById("submit").onclick = function(){
         
         if (playerWins) {
             pScore++;
-        } else {
+        } else if (ComputerWins) {
             cScore++;     
         }
         remainingRounds--;
