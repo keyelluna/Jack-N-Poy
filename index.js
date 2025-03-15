@@ -15,7 +15,7 @@ document.getElementById("submit").onclick = function(){
         
     }
     
-    document.getElementById("roundNum").textContent = `${NumOfRounds}`;
+    document.getElementById("roundNum").textContent = `1`;
 
     let rock = 1;
     let paper = 2;
@@ -38,13 +38,13 @@ document.getElementById("submit").onclick = function(){
 
     }
 
- let remainingRounds = NumOfRounds;
+ let rounds = 0;
  let pScore = 0;
  let cScore = 0;
 
  function play(){
 
-    if (remainingRounds > 0){
+    if (rounds < NumOfRounds){
         comp_move = Math.floor(Math.random() * 3) + 1;
 
         setMove(player_Move, "P_showMove");
@@ -60,13 +60,13 @@ document.getElementById("submit").onclick = function(){
         } else if (ComputerWins) {
             cScore++;     
         }
-        remainingRounds--;
-        document.getElementById("roundNum").textContent = `${remainingRounds}`;
+        rounds++;
+        document.getElementById("roundNum").textContent = `${rounds}`;
         document.getElementById("p_score").textContent = `${pScore}`;
         document.getElementById("c_score").textContent = `${cScore}`;
         console.log(comp_move);
     } 
-    if (remainingRounds == 0 ){
+    if (rounds == NumOfRounds ){
         document.getElementById("win").style.display = "block";
 
         if (pScore > cScore){
