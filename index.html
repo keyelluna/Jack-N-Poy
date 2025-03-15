@@ -1,0 +1,114 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Jack 'N Poy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container" id="bg">
+
+        <div class="container">
+            <H1 class="text-center">Jack 'N Poy</H1>
+            
+
+            <div class="rectangle">
+
+                <div id="scores">
+                    <div class="d-flex text-center">
+                        <div class="p-2"  id="player">Player:</div>
+                        <div class="p-2" id="p_score">0</div>
+                    </div>
+                    <div class="computer d-flex">
+                        <div class="p-2"  id="computer">Computer:</div>
+                        <div class="p-2" id="c_score">0</div>
+                    </div>
+                    
+                </div>
+
+                <div class="d-flex justify-content-center" id="Round">
+                    <div><span class="round">Round:<span id="roundNum"></span></span></div>
+                </div>
+
+                
+
+                <div class="container-center">
+
+                    <div class="container" id="welcome">
+                        <h3>Welcome!</h3><br>
+                        <label>Input Number of Round(s) : </label>
+                        <input  type="text" id="NumberofRounds"><br>
+                        <button type="button" id="submit">Done</button>
+                    </div>
+    
+                    
+                    <div class="container move" >
+                        <div class="d-flex counterpart">
+                            <div id="P_showMove"></div>
+                            <h2 class="vs">VS</h2>
+                            <div id="C_showMove"></div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="container" id="win">
+                        <h2 id="winlose"></h2>
+                        <div class="d-flex justify-content-around winSCore">
+                            <div class="container"><h4>Player: </h4></div>
+                            <div class="container"><h4>Computer: </h4></div>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <h4 id="PScore"></h4>
+                            <h4 id="CScore"></h4>
+                        </div>
+                        <button type="reset" id="reset">Play Again</button>
+                    </div>
+
+                    
+                </div>
+
+                
+                </div>
+
+            <div class="container">
+                
+
+            <div class="container" id="moveChoice">
+                <div class="d-flex justify-content-around">
+                    <div id="r1">
+                        <button onclick="enableButton()" class="emoji-medium" id="button_rock">👊</button>
+                    </div>
+                    <div id="r1">
+                        <button class="emoji-medium" id="button_paper">🤚</button>
+                    </div>
+                    <div id="r1">
+                        <button class="emoji-medium" id="button_scissor">✌️</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="dropdown text-end">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="dropdown-content">
+                        <p class="text-center">
+                        The winner is determined by the following rules: rock crushes scissors, scissors cuts paper, and paper covers rock. If both you and the computer choose the same move, the game is a tie and can be replayed.
+                        </p>
+                        <p class="text-end">created by Keyel Luna</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src = "index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
