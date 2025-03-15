@@ -161,6 +161,7 @@ input {
 }
 
 .emoji-medium {
+    text-align: center;
     font-size: 50;
     text-shadow: 4px 4px 4px rgba(44, 31, 31, 0.6);
 }
