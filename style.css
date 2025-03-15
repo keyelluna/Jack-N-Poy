@@ -73,6 +73,8 @@ H1 {
 }
 
 .vs {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-family: "Black Han Sans" ;
     font-size: 40px;
     text-shadow:2px 2px 4px rgba(58, 47, 47, 0.8);
@@ -139,6 +141,7 @@ input {
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+    height:110px;
 }
 
 #r1 {
@@ -146,6 +149,7 @@ input {
     background-color:#a1d99b;
     border-radius: 100%;
     width: 80px;
+    height: fit-content;
     box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
